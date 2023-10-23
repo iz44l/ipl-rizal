@@ -1,5 +1,9 @@
 class StandardCinema extends Cinema {
-    public StandardCinema(double price) {
+    public StandardCinema(Double price) {
         this.price = price;
+    }
+
+    Double calculateAdminFee() {
+        return price * 10 / 100;
     }
 }
